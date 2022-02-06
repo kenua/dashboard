@@ -1,0 +1,33 @@
+@use "sass:map";
+@use "../custom";
+
+a:link {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:visited {
+   color: inherit;
+}
+
+.user-profile-image {
+   background-color: grey;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+
+.user-profile-image--big {
+   width: 100px;
+   height: 100px;
+}
+
+@include custom.media-breakpoint-up(xl) {
+   .main {
+      display: grid;
+      grid-template-columns: 350px 1fr;
+   }
+}
