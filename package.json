@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "A dashboard page",
   "main": "index.js",
-  "dependencies": {
-    "bootstrap": "^5.1.3"
-  },
   "scripts": {
-    "compile:sass": "sass -w sass/styles.scss:css/styles.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "sass src/sass/styles.scss:styles.css",
+    "compile:sass:watch": "sass -w src/sass/styles.scss:styles.css"
   },
   "author": "Kenua",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
 }
