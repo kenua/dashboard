@@ -317,6 +317,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -329,9 +333,63 @@ button {
   background: transparent;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mt {
+  margin-top: 40px;
+}
+
+.fs-bold {
+  font-weight: bold;
+}
+
+.text-capi {
+  text-transform: capitalize;
+}
+
+.sidebar {
+  background-color: #2DD4BF;
+  color: #fff;
+  padding: 20px;
+}
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 40px;
+}
+.sidebar__dashboard-icon {
+  width: 40px;
+}
+.sidebar__h1 {
+  font-size: 2.4rem;
+}
+.sidebar__link {
+  font-size: 2rem;
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  column-gap: 24px;
+}
+.sidebar__link:hover .sidebar__link-text {
+  padding-left: 8px;
+  transform: scale(1.2);
+}
+.sidebar__link-text {
+  transition: padding-left 100ms ease-in-out, transform 100ms ease-in-out;
 }
 
 /*# sourceMappingURL=styles.css.map */
