@@ -24,7 +24,7 @@
         align-items: center;
         column-gap: 24px;
 
-        &:hover .sidebar__link-text {
+        &:hover .sidebar__link-text, &:focus .sidebar__link-text {
             padding-left: 8px;
             transform: scale(1.2);
         }

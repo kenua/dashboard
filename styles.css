@@ -384,7 +384,7 @@ ul, ol {
   align-items: center;
   column-gap: 24px;
 }
-.sidebar__link:hover .sidebar__link-text {
+.sidebar__link:hover .sidebar__link-text, .sidebar__link:focus .sidebar__link-text {
   padding-left: 8px;
   transform: scale(1.2);
 }
