@@ -331,6 +331,7 @@ button {
   margin: 0;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -360,10 +361,40 @@ ul, ol {
   text-transform: capitalize;
 }
 
+.mobile-sidebar-button {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .mobile-sidebar-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .body {
+    display: grid;
+    grid-template-columns: 303px 1fr;
+    grid-template-areas: "sidebar header" "sidebar content";
+  }
+}
+
 .sidebar {
   background-color: #2DD4BF;
   color: #fff;
+  width: 100%;
+  height: 100%;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: left 300ms ease-in-out;
+  overflow: auto;
+}
+.sidebar__close-button {
+  fill: white;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
 }
 .sidebar__header {
   display: flex;
@@ -390,6 +421,40 @@ ul, ol {
 }
 .sidebar__link-text {
   transition: padding-left 100ms ease-in-out, transform 100ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .sidebar {
+    height: 100vh;
+    grid-area: sidebar;
+    position: initial;
+  }
+  .sidebar__close-button {
+    display: none;
+  }
+}
+
+.sidebar--open {
+  left: 0;
+}
+
+.mobile-sidebar-button {
+  background-color: #2DD4BF;
+  fill: white;
+  width: 100%;
+  height: 40px;
+  display: block;
+}
+.mobile-sidebar-button svg {
+  width: 40px;
+  height: 40px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
 }
 
 /*# sourceMappingURL=styles.css.map */

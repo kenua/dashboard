@@ -1,0 +1,9 @@
+@use './mixins' as *;
+
+.mobile-sidebar-button {
+    display: block;
+
+    @include breakpoint(768px) {
+        display: none;
+    }
+}

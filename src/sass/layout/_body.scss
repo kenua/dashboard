@@ -1,0 +1,11 @@
+@use '../modules/mixins' as *;
+
+.body {
+    @include breakpoint(768px) {
+        display: grid;
+        grid-template-columns: 303px 1fr;
+        grid-template-areas:
+            "sidebar header"
+            "sidebar content"; 
+    }
+}

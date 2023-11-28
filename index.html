@@ -7,12 +7,22 @@
    <meta name="author" content="https://github.com/kenua">
    <title>Dashboard</title>
    <link rel="stylesheet" href="./styles.css">
+   <script src="./src/scripts/sidebar.js" defer></script>
 </head>
 <body class="body">
-   <aside class="sidebar fs-bold text-capi">
+   <button id="sidebar-open-button" class="mobile-sidebar-button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+   </button>
+
+   <aside id="sidebar" class="sidebar fs-bold text-capi">
       <header class="sidebar__header">
          <img src="./src/images/dashboard.svg" alt="" class="sidebar__dashboard-icon">
          <h1 class="sidebar__h1">Dashboard</h1>
+         <button id="sidebar-close-button" class="sidebar__close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+               <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+            </svg>
+         </button>
       </header>
       <nav>
          <ul>
@@ -76,21 +86,21 @@
          </ul>
       </nav>
    </aside>
-   <div class="content">
-      <header></header>
-      <main>
-         <section>
-            <h2>Your projects</h2>
-         </section>
 
-         <section>
-            <h2>Announcements</h2>
-         </section>
+   <header class="header">@user_name</header>
 
-         <section>
-            <h2>Trending</h2>
-         </section>
-      </main>
-   </div>
+   <main class="content">
+      <section>
+         <h2>Your projects</h2>
+      </section>
+
+      <section>
+         <h2>Announcements</h2>
+      </section>
+
+      <section>
+         <h2>Trending</h2>
+      </section>
+   </main>
 </body>
 </html>

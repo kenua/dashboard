@@ -3,4 +3,8 @@
 @use './modules/resets';
 @use './modules/utils';
 @use './modules/typography';
+@use './modules/buttons';
+@use './layout/body';
 @use './layout/sidebar';
+@use './layout/header';
+@use './layout/content';
