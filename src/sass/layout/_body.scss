@@ -7,5 +7,6 @@
         grid-template-areas:
             "sidebar header"
             "sidebar content"; 
+        grid-auto-rows: auto 1fr;
     }
 }

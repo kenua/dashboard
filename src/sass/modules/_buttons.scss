@@ -21,7 +21,7 @@
     }
 }
 .pill-button {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: bold;
     background-color: $primary;
     color: $white;
@@ -31,5 +31,9 @@
 
     &:hover, &:focus {
         transform: scale(0.9);
+    }
+
+    @include breakpoint(768px) {
+        font-size: 1.8rem;
     }
 }
