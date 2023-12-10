@@ -436,12 +436,26 @@ ul, ol {
 }
 
 .container {
+  background-color: #fff;
   border-radius: 12px;
   box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+.line {
+  background-color: #E7E5E4;
+  height: 1px;
+}
+
 .mt {
   margin-top: 40px;
+}
+
+.mb-1 {
+  margin-bottom: 5px;
+}
+
+.mb-2 {
+  margin-bottom: 25px;
 }
 
 .nom {
@@ -649,7 +663,6 @@ ul, ol {
 }
 
 .project {
-  background-color: #fff;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -678,6 +691,21 @@ ul, ol {
 
 .content-sidebar {
   grid-area: sidebar;
+}
+
+.announcements__content {
+  padding: 25px;
+}
+.announcements__item {
+  padding: 16px 8px;
+}
+
+.trending__content {
+  padding: 25px;
+}
+.trending__item {
+  display: flex;
+  column-gap: 16px;
 }
 
 /*# sourceMappingURL=styles.css.map */

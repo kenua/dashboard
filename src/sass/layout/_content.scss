@@ -35,7 +35,6 @@
     }
 }
 .project {
-    background-color: $white;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -65,4 +64,22 @@
 }
 .content-sidebar {
     grid-area: sidebar;
+}
+.announcements {
+    &__content {
+        padding: 25px;
+    }
+    &__item {
+        padding: 16px 8px;
+    }
+}
+.trending {
+    &__content {
+        padding: 25px;
+    }
+
+    &__item {
+        display: flex;
+        column-gap: 16px;
+    }
 }

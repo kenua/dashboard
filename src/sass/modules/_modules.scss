@@ -35,13 +35,26 @@
     box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, .15);
 }
 .container {
+    background-color: $white;
     border-radius: 12px;
     box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, .15);
+}
+.line {
+    background-color: $gray;
+    height: 1px;
 }
 .mt {
     margin-top: 40px;
 }
-
+.mb-1 {
+    margin-bottom: 5px;
+}
+.mb-2 {
+    margin-bottom: 25px;
+}
+.mb-3 {
+    
+}
 .nom {
     margin: 0;
 }
