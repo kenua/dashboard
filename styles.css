@@ -352,30 +352,6 @@ ul, ol {
   margin: 0;
 }
 
-.mt {
-  margin-top: 40px;
-}
-
-.fs-bold {
-  font-weight: bold;
-}
-
-.fs-1 {
-  font-size: 1.6rem;
-}
-
-.fs-2 {
-  font-size: 2rem;
-}
-
-.fs-3 {
-  font-size: 2.4rem;
-}
-
-.text-capi {
-  text-transform: capitalize;
-}
-
 .mobile-sidebar-button {
   display: block;
 }
@@ -423,6 +399,26 @@ ul, ol {
   color: #636363;
 }
 
+.fs-bold {
+  font-weight: bold;
+}
+
+.fs-1 {
+  font-size: 1.6rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 2.4rem;
+}
+
+.text-capi {
+  text-transform: capitalize;
+}
+
 .user-bubble {
   background-color: #FB7185;
   width: 40px;
@@ -442,6 +438,10 @@ ul, ol {
 .container {
   border-radius: 12px;
   box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.mt {
+  margin-top: 40px;
 }
 
 .nom {
