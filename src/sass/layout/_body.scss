@@ -1,6 +1,8 @@
 @use '../modules/mixins' as *;
 
 .body {
+    height: 100vh;
+
     @include breakpoint(768px) {
         display: grid;
         grid-template-columns: 303px 1fr;

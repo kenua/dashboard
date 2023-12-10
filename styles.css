@@ -360,6 +360,18 @@ ul, ol {
   font-weight: bold;
 }
 
+.fs-1 {
+  font-size: 1.6rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 2.4rem;
+}
+
 .text-capi {
   text-transform: capitalize;
 }
@@ -403,6 +415,14 @@ ul, ol {
   }
 }
 
+.c-gray {
+  color: #E7E5E4;
+}
+
+.c-dark-gray {
+  color: #636363;
+}
+
 .user-bubble {
   background-color: #FB7185;
   width: 40px;
@@ -415,6 +435,22 @@ ul, ol {
   height: 80px;
 }
 
+.box-shadow {
+  box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  border-radius: 12px;
+  box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.nom {
+  margin: 0;
+}
+
+.body {
+  height: 100vh;
+}
 @media screen and (min-width: 768px) {
   .body {
     display: grid;
@@ -506,6 +542,7 @@ ul, ol {
   padding: 16px;
   display: grid;
   row-gap: 24px;
+  z-index: 2;
 }
 .header__search {
   display: flex;
@@ -579,7 +616,68 @@ ul, ol {
 }
 
 .content {
+  background-color: #E7E5E4;
   grid-area: content;
+  display: grid;
+  grid-template-areas: "articles" "sidebar";
+  column-gap: 22px;
+  padding: 30px 20px;
+  overflow: auto;
+}
+@media screen and (min-width: 1250px) {
+  .content {
+    grid-template-columns: 1fr 277px;
+    grid-template-areas: "articles sidebar";
+  }
+}
+
+.content-articles {
+  grid-area: articles;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  gap: 25px;
+}
+.content-articles__main-heading {
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+@media screen and (min-width: 1100px) {
+  .content-articles {
+    grid-auto-rows: auto 218px;
+  }
+}
+
+.project {
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.project::before {
+  content: "";
+  background-color: #FB7185;
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.project__desc {
+  margin: 5px 0 0;
+}
+.project__actions {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  column-gap: 30px;
+}
+
+.content-sidebar {
+  grid-area: sidebar;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,68 @@
+@use '../modules/mixins' as *;
+@use '../modules/variables' as *;
+
 .content {
+    background-color: $gray;
     grid-area: content;
+    display: grid;
+    grid-template-areas: 
+            "articles" 
+            "sidebar";
+    column-gap: 22px;
+    padding: 30px 20px;
+    overflow: auto;
+
+    @include breakpoint(1250px) {
+        grid-template-columns: 1fr 277px;
+        grid-template-areas: 
+            "articles sidebar";
+    }
+}
+.content-articles {
+    grid-area: articles;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: auto;
+    gap: 25px;
+
+    &__main-heading {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    @include breakpoint(1100px) {
+        grid-auto-rows: auto 218px;
+    }
+}
+.project {
+    background-color: $white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        background-color: $secondary;
+        width: 10px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__desc {
+        margin: 5px 0 0;
+    }
+    &__actions {
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        column-gap: 30px;
+    }
+}
+.content-sidebar {
+    grid-area: sidebar;
 }

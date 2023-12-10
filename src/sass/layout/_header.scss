@@ -7,6 +7,7 @@
     padding: 16px;
     display: grid;
     row-gap: 24px;
+    z-index: 2;
 
     &__search {
         display: flex;
