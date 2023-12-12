@@ -420,6 +420,9 @@ ul, ol {
 }
 
 .user-bubble {
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #FB7185;
   width: 40px;
   height: 40px;
@@ -429,6 +432,22 @@ ul, ol {
 .user-bubble--big {
   width: 80px;
   height: 80px;
+}
+
+.user--cat {
+  background-image: url("./src/images/cat-user.svg");
+}
+
+.user--duck1 {
+  background-image: url("./src/images/duck-user.svg");
+}
+
+.user--duck2 {
+  background-image: url("./src/images/duck2-user.svg");
+}
+
+.user--flamingo {
+  background-image: url("./src/images/giraffe-user.svg");
 }
 
 .box-shadow {
@@ -485,6 +504,7 @@ ul, ol {
   left: -100%;
   transition: left 300ms ease-in-out;
   overflow: auto;
+  z-index: 10;
 }
 .sidebar__close-button {
   fill: white;

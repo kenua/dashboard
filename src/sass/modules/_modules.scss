@@ -22,6 +22,9 @@
     text-transform: capitalize;
 }
 .user-bubble {
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: $secondary;
     width: 40px;
     height: 40px;
@@ -30,6 +33,18 @@
 .user-bubble--big {
     width: 80px;
     height: 80px;
+}
+.user--cat {
+    background-image: url('./src/images/cat-user.svg');
+}
+.user--duck1 {
+    background-image: url('./src/images/duck-user.svg');
+}
+.user--duck2 {
+    background-image: url('./src/images/duck2-user.svg');
+}
+.user--flamingo {
+    background-image: url('./src/images/giraffe-user.svg');
 }
 .box-shadow {
     box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, .15);
