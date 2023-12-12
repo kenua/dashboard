@@ -1,11 +1,7 @@
-# Dashboard
+# Dashboard 🎨
 
-A responsive dashboard template using Sass, Bootstrap, and CSS grid layout.
+A responsive dashboard made with CSS grid layout.
 
-# commit message
-Modify .header styles to make it responsive
+🌐 [Live Preview](https://kenua.github.io/dashboard/)
 
-# Notes
-- Merge _utils.scss and _typography.scss into _modules.scss
-- Fix document outline
-- 
+[![screenshot](./screenshot.png)](https://kenua.github.io/dashboard/)
